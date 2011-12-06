@@ -1,1 +1,21 @@
-jQuery plugin that provides plain text search in a DOM element.
+= jquery.textSearch
+
+== A jQuery plugin that provides plain text search in a DOM element.
+
+It's a regular jQuery plugin. To search over a whole document, simply try:
+{{{
+$('body').textSearch('a word');
+}}}
+
+To remove highlighting (which actually modifies the DOM), try:
+{{{
+$('body').textSearch(false);
+}}}
+It will restore the DOM by reverting modifications.
+Highlighting can be removed on a subset only.
+
+Options are given as a second parameter:
+{{{
+$('body').textSearch('A wOrD', { caseSensitive: true });
+}}}
+
